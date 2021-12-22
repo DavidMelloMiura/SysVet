@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmaco</title>
+    <link rel="stylesheet" href="style_farmaco.css">
+    <script src="script_farmaco.js"></script>
+</head>
+<body>
+
+<main>
+    <a href="indice.html" class="voltar">
+    <img src="https://img.icons8.com/color/48/000000/circled-left--v3.png"/></a>
+
+    
+
+    <h1>Farmaco</h1>
+
+<section class="conteudo">
+    <div class="form">
+        <input type="number" name="peso" id="peso" placeholder="Peso">
+        <input type="number" name="concentracao" id="concentracao" placeholder="Concentração em ml / mg">
+        <button onclick="calcula()">Calcular</button>
+    </div>
+
+   
+    <div class="resultados">
+        <h2>Dosagem Líquida</h2>
+            <div class="res" id="liquido">-</div>
+
+        <input class="comp" type="number" id="concentComp" placeholder="Concentração do Comprimido">
+        <h2>Comprimido</h2>
+        <div class="res" id="fracionado">-</div>
+        <div class="inteiro" id="inteiro">Int</div>
+
+    </div>
+</section>
+</main>
+    
+</body>
+</html>

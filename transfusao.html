@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfusão Sanguinea</title>
+    <link rel="stylesheet" href="styleTransf.css">
+    <script src="script_transfusao.js"></script>
+</head>
+<body>
+
+<main>
+    <a href="indice.html" class="voltar">
+        <img src="https://img.icons8.com/color/48/000000/circled-left--v3.png"/></a>
+        
+    <h1>Transfusão</h1>
+
+<section class="conteudo">
+    <div class="form">
+        <input type="number" name="Tpeso" id="Tpeso" placeholder="Peso em Kg">
+
+        <p>Volume Total</p>
+        
+        <div class="VolTot">
+            <label for="oito" class="radioLabel">
+                <input type="radio" value="8" class="radio" name="VolTot" id="oito">
+                <div class="spaceradio"></div>
+                8%
+            </label>
+
+            <label for="dez" class="radioLabel">
+                <input type="radio" value="10" class="radio" name="VolTot" id="dez">
+                <div class="spaceradio"><!-- Virtual element --></div>
+                10%    
+                <div class="result" id="txtSangue">-</div>
+            </label>
+        </div>
+
+        <p>Volume a ser Extraido</p>
+
+        <div class="VolExt">
+            <label for="vinte" class="radioLabel">
+                <input type="radio" value="20" class="radio" name="VolExt" id="vinte">
+                <div class="spaceradio"></div>
+                20%
+            </label>
+
+            <label for="vintecinco" class="radioLabel">
+                <input type="radio" value="25" class="radio" name="VolExt" id="vintecinco">
+                <div class="spaceradio"><!-- Virtual element --></div>
+                25%
+                <div class="result" id="txtDoaSangue">-</div>    
+            </label>
+        </div>
+
+        <button onclick="calcular()">Calcular</button>
+        
+
+        
+    </div>
+   
+
+
+
+    <div class="resultados">
+        <h2>Coletagem Máxima</h2>
+        <div class="resultFinal" id="resultFinal">-</div> 
+        
+            
+
+        <!-- <p>TESTE DE CONVERSÃO</p>
+        <div id="testando">-</div> -->
+        
+
+        
+    </div>
+</section>
+</main>
+    
+</body>
+</html>
